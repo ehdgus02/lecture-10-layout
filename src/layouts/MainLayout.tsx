@@ -17,12 +17,12 @@ const Main = styled.main`
 
 // MainLayout은 컴포넌트 o
 // 얘는 Props로 전달받음
-function MainLayout({ onClick }: { onClick: VoidFunction }) {
+function MainLayout() {
     return (
         <Wrap>
-            <Header onClick={onClick} />
+            <Header />
             <Main>
-                <Outlet />,
+                <Outlet />
             </Main>
             <Footer />
         </Wrap>
